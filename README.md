@@ -27,6 +27,12 @@ ATS is a flexible Arduino-based Temperature Station project, with the following 
   
   -Re-activate the automatic device report function (in case of forced activation of the actuator or idle-mode)  ``` /c ```
   
+ ## Current pin-out
+  -Led (Red) ``` 9 ```
+  -Led (Yellow) ``` 7 ```
+  -Led (Green) ``` 8 ```
+  -Conditioning circuit's output (From 0v (5C) to 5v (40C)) ``` A0 ```
+  -Actuator ``` TBD ``` 
   
 
 
