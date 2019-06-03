@@ -9,7 +9,8 @@ ATS is a flexible Arduino-based Temperature Station project, with the following 
   - Remote commands to override or manually activate various functions
   - Automatic device report every 5 minutes (3000ms)
   
-  >If you need a Multi-platform TCP Client, checkout my other project [STCP]
+  >If you need a Multi-platform TCP Client, checkout [STCP]
+  
   >This software requires a compatible Ethernet Shield to properly work.
 
 ## Currently working commands:
