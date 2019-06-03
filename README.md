@@ -32,7 +32,6 @@ ATS is a flexible Arduino-based Temperature Station project, with the following 
 
 ## Configuration
 
->Remember to assign different IPs and MACs if you plan on deployng more than one device in the same network.
 
 In order to connect the device to a TCP Server, you'll have to manually assign an IP and a MAC to the device and specify the Server's IP.
 
@@ -45,8 +44,9 @@ IPAddress server(10, 0, 0, 21); //Specify the server's IP
 #define port 5555 //Specify the server's PORT
 ...
 ```
+>Remember to assign different IPs and MACs if you plan on deployng more than one device in the same network.
 
-Don't forget to also edit Ethernet.init(pin) with the CS pin of the Ethernet Shield currently in use:
+Don't forget to also edit ```Ethernet.init(pin)``` with the CS pin of the Ethernet Shield currently in use:
 ``` sh
 Ethernet.init(10);  // Most Arduino shields
 //Ethernet.init(5);   // MKR ETH shield
