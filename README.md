@@ -65,7 +65,6 @@ Ethernet.init(10);  // Most Arduino shields
 //Ethernet.init(15);  // ESP8266 with Adafruit Featherwing Ethernet
 //Ethernet.init(33);  // ESP32 with Adafruit Featherwing Ethernet
 ```
-.
 
 
 [STCP]: <https://github.com/lorenzocarlini/simple_tcp_server>
