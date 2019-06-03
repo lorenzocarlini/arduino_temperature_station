@@ -29,9 +29,13 @@ ATS is a flexible Arduino-based Temperature Station project, with the following 
   
  ## Current pin-out
   -Led (Red) ``` 9 ```
+  
   -Led (Yellow) ``` 7 ```
+  
   -Led (Green) ``` 8 ```
+  
   -Conditioning circuit's output (From 0v (5C) to 5v (40C)) ``` A0 ```
+  
   -Actuator ``` TBD ``` 
   
 
