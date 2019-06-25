@@ -34,6 +34,8 @@ bool connection = false;
 int dataMinTemp = 0;
 int dataMaxTemp = 0;
 long long tempTime = 0;
+int DataMinTemp = 0;
+int DataMaxTemp =0;
 
 
 void readSerial(){
@@ -190,8 +192,8 @@ void loop() {
 
       
       
-      dataMin = Serial.parseFloat();
-      dataMax = Serial.parseFloat();           
+      dataMinTemp = Serial.parseFloat();
+      dataMaxTemp = Serial.parseFloat();           
 
       if(connection)
       {
@@ -199,9 +201,13 @@ void loop() {
         dataMaxTemp = client.parseFloat();
       }
 
-      if (dataMinTemp >= 5.0 || dataMinTemp <= 40.0 || dataMinTemp < dataMaxTemp || dataMaxTemp >= 5.0 || dataMaxTemp <= 40.0 || dataMinTemp < dataMaxTemp)
+      if (dataMinTemp >= 5.0 && dataMinTemp <= 40.0 && dataMinTemp < dataMaxTemp )
       {
         dataMin = dataMinTemp;
+      }
+
+      if (dataMaxTemp >= 5.0 && dataMaxTemp <= 40.0 && dataMinTemp < dataMaxTemp)
+      {
         dataMax = dataMaxTemp;
       }
 
